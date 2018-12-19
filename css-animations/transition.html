@@ -16,9 +16,10 @@
         font-size: 17px;
         border-radius: 20px;
       }
-      .animated {
+      /* .animated {
         transition-property: background-color, border-radius;
         transition-duration: 5s, 1s;
+        transition-delay: 2s, 0.5s;
       }
       .box:hover {
         background: #e74c3c;
@@ -26,6 +27,14 @@
         transform: scale(2);
         border-radius: 50px;
         /* opacity: 0.5; */
+      /* } */
+      .animated {
+        transition-property: transform;
+        transition-duration: 2s;
+        transition-timing-function: easeOutBack;
+      }
+      .box:hover {
+        transform: translateX(300px);
       }
     </style>
   </head>
