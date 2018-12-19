@@ -6,7 +6,34 @@
     <title>Psuedo-Classes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <style>
+      h1:hover {
+        background-color: blue;
+      }
+      button:hover {
+        color: white;
+      }
+      input:focus {
+        background-color: teal;
+      }
+      button:focus {
+        border-radius: 10px;
+        background-color: #2ecc71;
+      }
+      button:active {
+        background-color: orange;
+        font-size: 30px;
+      }
+      h1:active,
+      p:active {
+        color: yellow;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1>I am an h1</h1>
+    <h1>I am also an h1</h1>
+    <p>I am a paragraph</p>
+    <input type="text" /> <button>Click</button>
+  </body>
 </html>
