@@ -29,12 +29,15 @@
         /* opacity: 0.5; */
       /* } */
       .animated {
-        transition-property: transform;
+        transition: transform 2s ease-out 1s, background-color 0.5s linear;
+        /* transition-property: transform;
         transition-duration: 2s;
         transition-timing-function: easeOutBack;
+        transition-delay: 1s; */
       }
       .box:hover {
         transform: translateX(300px);
+        background-color: teal;
       }
     </style>
   </head>
