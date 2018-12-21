@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Polygon Widget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .box {
+        background-color: #cc0042;
+        /* flex: 1 1 200px; */
+        flex-shrink: 2;
+        flex-basis: 200px;
+        flex-grow: 1;
+        color: white;
+        font-family: Helvetica;
+        padding: 20px;
+        transition: 0.1s background;
+      }
+      .box:hover {
+        background: #ff0052;
+      }
+      .middle {
+        background: #b20039;
+        flex-shrink: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+          explicabo?
+        </h3>
+      </div>
+      <div class="box middle">
+        <h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ipsam.
+        </h3>
+      </div>
+      <div class="box">
+        <h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+          tenetur!
+        </h3>
+      </div>
+    </div>
+  </body>
+</html>
