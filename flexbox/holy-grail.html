@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Holy Grail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        min-height: 100vh;
+        background: #2c3e50;
+        font-family: Helvetica;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      main > *,
+      header,
+      footer {
+        margin: 4px;
+        padding: 5px;
+        border-radius: 7px;
+      }
+      header,
+      footer {
+        background: #1abc9c;
+        flex-basis: 100px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      main {
+        display: flex;
+        flex-basis: 800px;
+      }
+      article {
+        flex: 4 0 60%;
+        background: #ecf0f1;
+      }
+      nav {
+        flex: 1 1 20%;
+        order: -1;
+        background: #95a5a6;
+      }
+      aside {
+        flex: 1 1 20%;
+        background: #3498db;
+      }
+
+      @media all and (max-width: 640px) {
+        main {
+          flex-direction: column;
+          flex-grow: 1;
+        }
+        nav {
+          order: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header><a href="">Nav Left</a> <a href="">Nav Right</a></header>
+    <main>
+      <article>MAIN CONTENT</article>
+      <nav>SIDE NAV</nav>
+      <aside>ASIDE</aside>
+    </main>
+    <footer>FOOTER</footer>
+  </body>
+</html>
